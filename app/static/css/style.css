@@ -1,0 +1,122 @@
+#col-sm-6 ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+    font-family:'Avenir LT W01 35 Light';
+
+}
+row {
+  font-family:'Avenir LT W01 35 Light';
+
+
+}
+
+
+#conteudo-left{
+  /*Novamente definimos a largura da div*/
+  width:500px;
+  /* altura da div */
+  height:300px;
+  /* O atributo Float é utilizado para fazermos o nosso bloco(div)
+  literalmente flutue e se posicione onde queremos na página,
+  quando escolhemos left, dizemos que esse bloco irá se posicionar na
+  parte esquerda da página */
+  float:left;
+  /* Cor de fundo da div */
+  background-color:#0B173B;
+  color:gray;
+  }
+#conteudo-right{
+  /*Novamente definimos a largura da div*/
+  width:500px;
+  /* altura da div */
+  height:300px;
+  /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco
+  em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo
+  em cascata, nossa div conteúdo definimos a largura de 1000px e na
+  conteudo-left 500px, automaticamente ao definirmos o conteudo-right
+  com 500px e à esquerda também, ele ficou à direita do conteudo-left,
+  pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+  float:right;
+  /* Cor de fundo da div */
+  background-color:#0B173B;
+  color:gray;
+
+  }
+
+  #div_993{
+    background-color:#0B173B;
+
+  }
+
+
+  .navbar-fixed {
+  	z-index: 1000;
+  }
+
+
+  /* FOOTER */
+
+  .page-footer {
+  	color: #fff;
+  	background-color: #213f63;
+  }
+
+  .footer_margin {
+  	margin-bottom: 0px;
+  }
+
+  .logo_cefet {
+  	height: 30%;
+  	width: 30%;
+  }
+
+  .logo_confies {
+  	height: 30%;
+  	width: 30%;
+  	margin-left:10%;
+  }
+
+  @media (max-width:993px) {
+  	.logo_cefet {
+  		height: auto;
+  		width: 15%;
+  	}
+
+  	.logo_confies {
+  		height: auto;
+  		width: 15%;
+  		margin-left:10%;
+  	}
+  }
+
+  .footer_before_a {
+  	color: #fff;
+  }
+
+  .footer_before_p {
+  	margin-bottom: -1em;
+  	margin-top: 0;
+  }
+
+  .footer_before_row {
+  	margin-bottom: 5%;
+  }
+
+  .footer_facebook {
+  	padding-bottom: 5%;
+  }
+
+  .content {
+  	min-height: 90vh;
+  }
+
+  .footer,
+  .push {
+  	height: 100%;
+  }

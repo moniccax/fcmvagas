@@ -1,0 +1,105 @@
+<html>
+    <head>
+
+      <meta charset="UTF-8">
+      <meta name="theme-color" content="#303565">
+
+
+      {% if title %}
+      <title>{{ title }} Estágios</title>
+      {% endif %}
+
+      <link rel="icon" href="/static/images/icon-32x32.png" />
+      <link rel="stylesheet" href="/static/materialize/css/materialize.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+      <link href="http://allfont.net/allfont.css?fonts=cicle-fina" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+    	<div class="col 8">
+
+        {% include 'base.html' %}
+      </div>
+
+
+
+  <!--  	<div class="col l8"> -->
+
+
+  <section>
+    <nav>
+      <ul>
+        <h3> Seja bem vinde ao site de vagas da Fundação CEFETMINAS!</h3>
+
+      </ul>
+    </nav>
+
+</section>
+  	<div class="col l4">
+
+        {% for post in posts %}
+      <div><p>{{ post.author.username }} pergunta: <b>{{ post.body }}</b></p></div>
+        {% endfor %}
+
+    	</div>
+
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    	<script src="/static/materialize/js/materialize.js"></script>
+    </body>
+
+<style>
+
+nav {
+
+
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+  color: #00004d;
+  font-family: 'Fredericka the Great';font-size: 22px;
+
+
+}
+body {
+  font-family:'Avenir LT W01 35 Light';
+}
+</style>
+
+{% include 'footer.html' %}
+
+</html>
+
+<!--
+font-family: 'Cicle Fina', arial;}
+VAMOS DESVENDAR O MISTÉRIO DO CANDIDATO IDEAL?
+
+Qual seu nome?
+
+Como a FCM pode te ajudar?
+
+Estou sem trabalhar, buscando recolocação no mercado de trabalho
+Estou em busca do meu primeiro emprego
+Estou empregado, porém em busca de novas oportunidades
+
+
+Qual seu e-mail?
+
+
+
+<body>
+	<div class="row">
+	<div class="col l4"></div>
+	<div class="col l4">
+	<h3> Seja bem vinde ao site de vagas da Fundacao CEFETMINAS!</h3>
+  </div>
+
+	</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="/static/materialize/js/materialize.js"></script>
+</body>
+</html>
+-->

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div id="page">
+                <nav class="gtco-nav" role="navigation">
+                  <div class="navbar-fixed">
+                                <div class="row">
+                                        <div class="col-sm-3 col-xs-8">
+                                                <div id="gtco-logo">
+                                                         <a href="/index">
+                                                                  <img src="static/images/logoESTAGIOS.png" width="150px" height="auto">
+                                                        </a>
+                                                </div>
+                                        </div>
+                        <!--                <div class="col-xs-9 text-right menu-1 main-nav">     <ul> -->
+                                        <div class="col-sm-6">
+                                          <ul>
+                                                        <li class="active"> <a href="{{ url_for('index') }}">Início</a></li>
+                                                        <li><a href="#" data-nav-section="about">Quem Somos</a></li>
+                                                        <li><a href="#" data-nav-section="our-team">Benefícios</a></li>
+                                                        <li><a href="#" data-nav-section="fluxo">Processo</a></li>
+                                                        {% if current_user.is_anonymous %}
+                                                        <li><a href="{{ url_for('login') }}">Estudante</a></li>
+                                                        <li><a href="{{ url_for('login') }}">Empresa</a></li>
+                                                        {% else %}
+                                                        <a href="{{ url_for('user', username=current_user.username) }}">Profile</a>
+                                                        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                                                        {% endif %}
+                                                        <li><a href="#" data-nav-section="contact"><span>Contato</span></a></li>
+
+
+                                        </ul>
+                                      </div>
+                                      <div class="col-auto">
+                                       <center>  <ul>
+                                  <!--
+                                  <a href="{{ url_for('index') }}">Home</a>
+                                  {% if current_user.is_anonymous %}
+                                  <a href="{{ url_for('login') }}">Login</a>
+                                  {% else %}
+                                  <a href="{{ url_for('logout') }}">Logout</a>
+                                  {% endif %}
+                                  -->
+                                         <li><a href="{{ url_for('login') }}">
+                                                  <img src="static/images/extraclasse.png" width="25px" height="auto" >
+                                        </a></li>
+                                      </center>
+                                       </ul>
+                                      </div>
+
+                        </div>
+                      </div>
+
+                </nav>
+
+
+                         <!-- QUEM SOMOS -->
+
+
+    </div>
+</body>
+
+
+</html>
